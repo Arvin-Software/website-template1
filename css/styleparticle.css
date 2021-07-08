@@ -1,0 +1,70 @@
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #fafafa;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #0e99f6;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.panel{
+  position:absolute;
+  z-index:10;
+  width: 90%;
+  /* background:#eee; */
+  top:40%;
+  left:0%;
+  padding:20px;margin: 2% 2% 2% 2%; border-radius:4px;box-sizing:border-box;z-index:100}

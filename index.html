@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/logo.svg" />
+    <title>Template company</title>
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styleparticle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+    </style>
+</head>
+<body class="fnt-cur" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="container-fluid bor-bot top-br shadow fixed-top" style="margin-bottom: 0%;">
+        <div class="row">
+            <div class="col-xl-3 d-none d-xl-block text-right">
+            </div>
+            <div class="col-xl-4 my-auto d-block" style="padding-left: 10%; padding-top: 0%; padding-bottom: 0%;">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo" style="width: 58px;"></a>
+                    <!-- <a class="navbar-brand" href="#"></a> -->
+                    
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar" style="font-size: 20px;">
+                        <ul class="navbar-nav text-white">
+                            
+                            <li class="nav-item">
+                                <a class="nav-link active text-left" style="width: 100%;" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-left" href="#products"style="width: 100%;">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-left" href="#services"style="width: 100%;">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-left" href="#about"style="width: 100%;">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-left" href="#contact"style="width: 100%;">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav> 
+            </div>
+        </div>
+        
+    </div>
+    <div id="home" name="home" class="text-center text-white" class="container-fluid" style="height: 100vh; margin-bottom: 0%;">
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+        <script src="js/particles.min.js"></script>
+        <script src="js/app.js"></script>
+
+        <!-- stats.js -->
+        <!-- <script src="js/lib/stats.js"></script> -->
+        <script>
+            var count_particles, stats, update;
+            stats = new Stats;
+            stats.setMode(0);
+            stats.domElement.style.position = 'absolute';
+            stats.domElement.style.left = '0px';
+            stats.domElement.style.top = '0px';
+            document.body.appendChild(stats.domElement);
+            count_particles = document.querySelector('.js-count-particles');
+            update = function() {
+              stats.begin();
+              stats.end();
+              if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+              }
+              requestAnimationFrame(update);
+            };
+            requestAnimationFrame(update);
+          </script>
+            <div class="panel">
+                <h1 style="font-size: 60px;">Welcome to Sample</h1>
+                <h3 style="padding-bottom: 2%;">We Love To Build Future</h3>
+                <a href="#products" class="btn btn-light">Browse Products</a>
+            </div>
+    </div>
+</div>
+    <div class="container-fluid bg-white" id="products" name="products" style="margin-bottom: 0%; padding-top: 5%;">
+        <h1 class="text-center" style="margin-bottom: 5%;">Our Products</h1>
+        <div class="container" style="padding-bottom: 5%;">
+            <div class="row text-center">
+                <div class="col-sm-4 p-2" style="padding-top: 0%;">
+                    <div class=" shadow p-4 bg-white border" style="height: 100%;">
+                        <img src="images/logo.svg" alt="Clerklybooks" style="width: 100px; margin: 5% 5% 5% 5%;"><br />
+                        <h3 style="margin-top: 0%;">Product 1</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In malesuada nulla ut eros dictum rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus blandit facilisis tempor.<br /><br />
+                        <a href="#" target="_blank" class="btn btn-outline-dark">Visit Product 1</a>
+                    </div>
+                </div>
+                <div class="col-sm-4 p-2">
+                    <div class="shadow p-4 bg-white border" style="height: 100%;">
+                        <img src="images/logo.svg" alt="arvineducation" style="width: 100px; margin: 5% 5% 5% 5%;"><br />
+                        <h3>Product 2</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In malesuada nulla ut eros dictum rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus blandit facilisis tempor.<br /><br />
+                        <a href="#" target="_blank" class="btn btn-outline-primary">Visit Product 2</a>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-4 p-2">
+                    <div class="shadow p-4 bg-primary border text-white" style="height: 100%;">
+                        <img src="images/logo.svg" alt="arvineducation" style="width: 100px; margin: 5% 5% 5% 5%;"><br />
+                        <h3>Product 3</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In malesuada nulla ut eros dictum rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus blandit facilisis tempor.<br /><br />
+                        <a href="#" target="_blank" class="btn btn-outline-light">Visit Product 3</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid border bg-light" id="services" name="services" style=" padding-bottom: 5%; margin-bottom: 5%; padding-top: 5%; ">
+        <div class="container-fluid" style="width: 90%;">
+            <h1 class="text-center" style="margin-bottom: 5%; font-size: 48px;">Our Services</h1>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="p-2" style="background-image: url(images/dataanaly.jpg); background-repeat:no-repeat; opacity: 0.8; height: 400px;">
+                        <div class="p-2" style="background: rgba(255,255,255,0.5); width: 100%;">
+                            <h3>Service 1</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-sm-6" style="margin-top: 0px;">
+                            <div class="p-2 border" style="background-image: url(images/webapp.jpg); opacity: 0.8; height: 200px;">
+                                <div class="p-2" style="background: rgba(0,0,0,0.5); width: 100%;">
+                                    <h3 class="text-white">Service 2</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" style="margin-top: 0px;">
+                            <div class="p-2 border" style="background-image: url(images/seo.jpg); opacity: 0.8; height: 200px;">
+                                <div class="p-2" style="background: rgba(0,0,0,0.5); width: 100%;">
+                                    <h3 class="text-white">Service 3</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" style="margin-top: 10px;">
+                            <div class="p-2 border" style="background-image: url(images/logodesign.jpg); opacity: 0.8; height: 190px;">
+                                <div class="p-2" style="background: rgba(0,0,0,0.5); width: 100%;">
+                                    <h3 class="text-white">Service 4</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" style="margin-top: 10px;">
+                            <div class="p-2 border" style="background-image: url(images/webdesign.jpg); opacity: 0.8; height: 190px;">
+                                <div class="p-2" style="background: rgba(0,0,0,0.5); width: 100%;">
+                                    <h3 class="text-white">Service 5</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" style="margin-top: 5%;">
+                    <div class=" border p-4 bg-white bor-ten">
+                        <h1 class="text-center" style="margin-bottom: 5%; font-size: 40px;">Technologies we use</h1>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3" style="padding: 2% 2% 2% 2%;">
+                                <h3 class="">Tech 1</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                <ul class="ul-check text-left " style="padding-left: 0px;">
+                                    <li>&nbsp;&nbsp;Tech 1.1</li><br />
+                                    <li>&nbsp;&nbsp;Tech 1.2</li><br />
+
+                                </ul>
+                            </div>
+                            <div class="col-sm-3" style="padding: 2% 2% 2% 2%;">                                
+                                <h3 class="">Tech2</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <ul class="ul-check text-left " style="padding-left: 0px;">
+                                    <li>&nbsp;&nbsp;Tech 2.1</li><br />
+                                    <li>&nbsp;&nbsp;Tech 2.2</li><br />
+                                    <li>&nbsp;&nbsp;Tech 2.3</li>
+
+                                </ul>
+                            </div>
+                            <div class="col-sm-3" style="padding: 2% 2% 2% 2%;">
+                                
+                                <h3 class="">Tech 3</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <ul class="ul-check text-left " style="padding-left: 0px;">
+                                    <li>&nbsp;&nbsp;Tech 3.1</li><br />
+                                    <li>&nbsp;&nbsp;Tech 3.2</li><br />
+                                    <li>&nbsp;&nbsp;Tech 3.2</li><br />
+                                    <li>&nbsp;&nbsp;Tech 3.3</li><br />
+
+                                </ul>
+                            </div>
+                            <div class="col-sm-3" style="padding: 2% 2% 2% 2%;">
+                                
+                                <h3 class="">Tech 4</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <ul class="ul-check text-left " style="padding-left: 0px;">
+                                    <li>&nbsp;&nbsp;Tech 4.1</li><br />
+                                    <li>&nbsp;&nbsp;Tech 4.2</li><br />
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container-fluid" id="about" name="about" style="padding-bottom: 5%; padding-top: 0%; ">
+        <div class="container">
+            <h1 class="text-center" style="margin-bottom: 5%; font-size: 48px;">About</h1>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/information.svg" style="width: 40%;" alt="about" class="mx-auto d-block">
+                </div>
+                <div class="col-sm-6" style="padding-top: 5%;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In malesuada nulla ut eros dictum rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus blandit facilisis tempor. Etiam convallis, odio id tincidunt accumsan, lectus felis placerat nisi, at consequat eros felis id tellus. Nulla aliquam ut leo sit amet tempus. Morbi auctor commodo turpis, nec hendrerit ligula pretium at. Mauris eget tortor non metus ornare tempus a et metus. Fusce lobortis feugiat eros in elementum.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-light border" id="contact" name="contact" style="padding-bottom: 5%; padding-top: 5%; ">
+        <div class="container p-4" style="border-radius: 10px 10px 10px 10px; background-color: rgba(255,255,255,1);">
+            <h1 class="text-center" style="margin-bottom: 5%; font-size: 48px;">Enquire now</h1>
+            <div class="row">
+                <div class="col-sm-6" style="padding-top: 0%;">
+                    <form action="contact.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="nm" id="nm" class="form-control" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email ID</label>
+                            <input type="email" name="email" id="email" class="form-control" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="mess" id="mess" cols="30" rows="5" class="form-control" required=""></textarea>
+                        </div>
+                        <br/>
+                        <div class="form-group">
+                            <label for="accept">By submitting you are accepting the <a href="termsandconditions.html" style="">terms and conditions</a> of the company</label>
+                            <input type="submit" value="Send message" class="btn btn-primary" id="submit" name="submit">
+                        </div>
+                        
+                        
+                    </form>
+                </div>
+                <div class="col-sm-6 d-none d-md-block p-4" >
+                    <img src="images/customer.svg" class="d-block mx-auto" alt="contact" style="width: 70%; margin-top: 10%;">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background-color: #0e99f6; padding-top: 5%; padding-bottom: 5%;">
+              
+        
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-sm-3">
+                    <b>Company</b> <br>
+                    No 1, Sample Street, Sample suburb, samplecity, samplestate, samplecountry<br>
+                    
+                </div>
+                <div class="col-sm-3">
+                    <b>Phone</b> <br>
+                    (+00) 000 000 000<br>
+                    (+00) 000 000 000
+                    
+                </div>
+                <div class="col-sm-3">
+                    <b>Email</b> <br>
+                    <a href="mailto:example@example.com" class=" text-white">example@example.com</a>
+                    <br /><a href="mailto:example1@example.com" class=" text-white">example1@example.com</a>    
+                    <br /><a href="mailto:example2@example.com" class=" text-white">example2@example.com</a>
+                </div>
+                <div class="col-sm-3">
+                    <b>Quick links</b> <br>
+                    <a href="404.html" class=" text-white">Careers</a>
+                    <br /><a href="404.html" class=" text-white">Internship</a>    
+                    <br /><a href="termsandconditions.html" class=" text-white">Terms and conditions</a>
+                </div>
+                
+            </div>
+            <hr class="text-white bg-white">
+                <img src="images/logo.svg" class="mx-auto d-block" alt="logo" style="width: 128px;margin-top: 5%;">      
+                <p class="text-center" style="margin-top: 2%;">&copy; 2021 Sample company. All Rights Reserved.</p>
+        </div>
+        
+    </div>
